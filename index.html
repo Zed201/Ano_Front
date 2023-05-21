@@ -12,6 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <link rel="shortcut icon" href="./icons8-form-96.png" type="image/x-icon">
 </head>
+<style>
+    select, input{
+        margin: 5px;
+    }
+</style>
 <body class="bg-secondary text-light">
     <div class="container-fluid mt-2">
         <p class="text-center h3">Formulário de Envio de Anotações</p>
@@ -28,11 +33,12 @@
                 <div class="container-fluid">
                     <label for="materia" class="m-lg-2 form-label">Matéria:</label>
                     <select name="materia" class="form-select-sm bg-dark-subtle" id="materia">
-                        <optgroup label="Matéria">
-                            <option value="Introdução-a-Programação">Introdução a Programação</option>
-                            <option value="Algoritmos-e-Estruturas-de-Dados">Algoritmos-e-Estruturas-de-Dados</option>
-                            <option value="Engenharia-de-Sofwares-e-Sistema">Engenharia-de-Sofwares-e-Sistema</option>
-                            <option value="Informática-Teórica">Informática-Teórica</option>
+                        <optgroup label="Matérias">
+                            <option value="algebra-vetorial-linear-p-computacao">Algebra Vetorial Linear p/ Computação</option>
+                            <option value="matematica-discreta-p-computacao">Matemática Discreta p/ Computação</option>
+                            <option value="calculo-diferencial-e-integral-1">Cálculo Diferencial e Integral 1</option>
+                            <option value="introducao-a-computacao">Introdução a Computação</option>
+                            <option value="introducao-a-programacao">Introdução a Programação</option>
                         </optgroup>
                     </select>
                     <label for="periodo" class="m-lg-2 form-label">Período:</label>
@@ -50,6 +56,7 @@
                             <option value="10">10</option>
                         </optgroup>
                     </select>
+                    <br>
                     <label for="data" class="m-lg-2 form-label">Data da Anotação:</label>
                     <input type="date" name="data" id="data" class="form-control-sm bg-dark-subtle">
                 </div>

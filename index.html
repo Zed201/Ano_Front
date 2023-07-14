@@ -35,9 +35,6 @@
                     <select name="materia" class="form-select-sm bg-dark-subtle" id="materia">
                         <optgroup label="Matérias">
                             <option value="aleatorio">Aleatório</option>
-                            <option value="algebra-vetorial-linear-p-computacao">Algebra Vetorial Linear p/ Computação</option>
-                            <option value="matematica-discreta-p-computacao">Matemática Discreta p/ Computação</option>
-                            <option value="calculo-diferencial-e-integral-1">Cálculo Diferencial e Integral 1</option>
                             <option value="introducao-a-computacao">Introdução a Computação</option>
                             <option value="introducao-a-programacao">Introdução a Programação</option>
                         </optgroup>
@@ -46,15 +43,6 @@
                     <select name="periodo" class="form-select-sm bg-dark-subtle" id="periodo">
                         <optgroup label="Período">
                             <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
                         </optgroup>
                     </select>
                     <br>
@@ -65,7 +53,7 @@
             <div class="container-fluid p-5">
                 <fieldset>
                     <legend class="form-label" for="anotacao">Anotações:</legend>
-                    <textarea name="anotacao" id="anotacao" rows="10" class="m-1 form-control bg-dark-subtle" placeholder="Anotação"></textarea>
+                    <textarea name="anotacao" id="anotacao" rows="15" class="m-1 form-control bg-dark-subtle" placeholder="Anotação"></textarea>
                 </fieldset>
             </div>
               <div class="container-fluid text-center">
@@ -77,7 +65,10 @@
 <script>
     const x = document.getElementById("data")
     x.flatpickr({
-        dateFormat: "dmY"
+        enableTime:false,
+        dateFormat: "dmY",
+        minDate: "today",
+        defaultDate: "today"
     })
 </script>
 </html>
